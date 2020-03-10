@@ -1,0 +1,82 @@
+﻿<Window x:Class="Eunbi_Seo_Sec005_COMP212_Lab03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eunbi_Seo_Sec005_COMP212_Lab03"
+        mc:Ignorable="d"
+        Title="Calculator App" Height="650" Width="900">
+    <Grid>
+        <!--Title-->
+        <TextBlock 
+            FontSize="37" HorizontalAlignment="Left" Margin="288,22,0,0"
+            TextWrapping="Wrap" Text="Dental Payment System" VerticalAlignment="Top"
+            Height="59" Width="483"/>
+
+        <!--Patient Name-->
+        <TextBlock 
+            x:Name="patientName" FontWeight="Bold" FontSize="17" HorizontalAlignment="Left" Margin="36,138,0,0"
+            TextWrapping="Wrap" Text="Name of Patient:" VerticalAlignment="Top"
+            Height="59" Width="146"/>
+
+        <!--Address-->
+        <TextBlock 
+            FontWeight="Bold" FontSize="17" HorizontalAlignment="Left" Margin="36,249,0,0"
+            TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top"
+            Height="59" Width="146"/>
+
+        <!--Dental Service Avaliable-->
+        <TextBlock   FontStyle="Italic"
+            FontWeight="Bold" FontSize="17" HorizontalAlignment="Left" Margin="645,121,0,0"
+            TextWrapping="Wrap" Text="Dental Services Avaliable" VerticalAlignment="Top"
+            Height="59" Width="227"/>
+
+        <!--Patient Textbox-->
+        <TextBox x:Name="patientNames" HorizontalAlignment="Left" Height="25" Margin="187,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" TextChanged="TextBox_TextChanged_1"/>
+
+        <!--Address TextBox-->
+        <StackPanel Margin="187,252,344.556,314.667">
+            <ComboBox  x:Name="cmbSelect" Margin="0,0,0.111,0">
+                <ComboBoxItem IsSelected="True">Alberta - HST 7%</ComboBoxItem>
+                <ComboBoxItem >Ontario - HST 13%</ComboBoxItem>
+                <ComboBoxItem>Quebec - HST 6%</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <!--CheckBox-->
+        <StackPanel HorizontalAlignment="Left" Height="208" Margin="660,172,-90.444,0" VerticalAlignment="Top" Width="326">
+            <CheckBox x:Name="flossing"  FontSize="15"  VerticalAlignment="Center" VerticalContentAlignment="Center"  FontWeight="Bold"
+                Content="Flossing" Height="33" HorizontalAlignment="Right" Width="121" Margin="0,0,205.222,0" Checked="CheckBox_Checked"/>
+
+            <CheckBox  x:Name="filling"  FontSize="15"  VerticalAlignment="Center" VerticalContentAlignment="Center"  FontWeight="Bold"
+                Content="Filling" Height="85" HorizontalAlignment="Right" Width="86" Margin="0,0,240.222,0"/>
+
+            <CheckBox  x:Name="root"   FontSize="15" VerticalAlignment="Center" VerticalContentAlignment="Center"  FontWeight="Bold"
+                Content="Root Canal" Height="53" HorizontalAlignment="Right" Width="104" Margin="0,0,222.222,0"/>
+        </StackPanel>
+        <TextBlock 
+            FontWeight="Bold" FontSize="17" HorizontalAlignment="Left" Margin="36,138,0,0"
+            TextWrapping="Wrap" Text="Name of Patient:" VerticalAlignment="Top"
+            Height="59" Width="146"/>
+        <TextBlock   FontSize="15" HorizontalAlignment="Left" Margin="798,181,0,0" TextWrapping="Wrap" Text="$20.00" VerticalAlignment="Top"/>
+        <TextBlock  FontSize="15"  HorizontalAlignment="Left" Margin="798,240,0,0" TextWrapping="Wrap" Text="$75.00" VerticalAlignment="Top"/>
+        <TextBlock  FontSize="15"  HorizontalAlignment="Left" Margin="798,309,0,0" TextWrapping="Wrap" Text="$150.00" VerticalAlignment="Top"/>
+
+        <!--Calculation-->
+        <Button FontWeight="Bold" FontSize="17" Background="MediumSlateBlue" Foreground="White" 
+            Content="Calculation" HorizontalAlignment="Left" Margin="645,385,0,0" VerticalAlignment="Top" Width="212" Height="76" Click="Button_Click"/>
+
+        <TextBlock x:Name="result"  FontSize="17" HorizontalAlignment="Left" Margin="63,535,0,0" TextWrapping="Wrap" Text="Result: " VerticalAlignment="Top" Height="32" Width="770"/>
+
+        <GroupBox Margin="38,352,343.556,143.667">
+            <StackPanel Margin="10">
+                <RadioButton x:Name="senior"  FontSize="15" Content="Senior" Margin="5"/>
+                <RadioButton x:Name="kid"  FontSize="15"  Content="Kids and Youths" Margin="5" Checked="kid_Checked"/>
+                <RadioButton x:Name="adult"  FontSize="15"  Content="Adult" Margin="5" IsChecked="True"/>
+            </StackPanel>
+        </GroupBox>
+        <Image Source="C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\teeth-icon.png" HorizontalAlignment="Left" Height="69" Margin="220,22,0,0" VerticalAlignment="Top" Width="59"/>
+
+
+    </Grid>
+</Window>

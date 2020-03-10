@@ -1,0 +1,9 @@
+﻿<Application x:Class="Eunbi_Seo_Sec005_COMP212_Lab03.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Eunbi_Seo_Sec005_COMP212_Lab03"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

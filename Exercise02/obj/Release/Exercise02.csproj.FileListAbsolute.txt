@@ -1,0 +1,6 @@
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\bin\Release\Exercise02.exe.config
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\bin\Release\Exercise02.exe
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\bin\Release\Exercise02.pdb
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\obj\Release\Exercise02.csprojAssemblyReference.cache
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\obj\Release\Exercise02.exe
+C:\COMP212-p3\_Assignment Folder\Eunbi_Seo_Sec005_COMP212_Lab03\Exercise02\obj\Release\Exercise02.pdb
